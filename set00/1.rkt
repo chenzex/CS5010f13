@@ -1,11 +1,5 @@
-#lang racket
-;lpsec : Number
-;RETURNS: the number of seconds in a leap year
-;EXAMPLES: 
-; (lpyr->lpsec 1996)
-; (lpyr->lpsec 0)
-; (lpyr->lpsec 200)
-
-(define (lpsec y)
-  (* 366 (* 24 (* 60 60))))
-
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname |1|) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor mixed-fraction #f #t none #f ())))
+;RETURNS: the number of seconds in a leap year.
+(* (* (* 60 60) 24) 366)
